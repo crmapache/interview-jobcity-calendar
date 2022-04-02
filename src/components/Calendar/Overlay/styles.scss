@@ -1,0 +1,32 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  .overlayInner {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 40px 20px 20px 20px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+    .closeButton {
+      height: 21px;
+      width: 21px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+}

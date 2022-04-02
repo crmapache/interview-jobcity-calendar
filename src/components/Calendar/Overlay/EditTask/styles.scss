@@ -1,0 +1,30 @@
+.newTask {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .inputWrapper {
+    margin-bottom: 15px;
+    display: flex;
+
+    & > * {
+      flex: 1 1 0;
+    }
+
+    & > * + * {
+      margin-left: 15px;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

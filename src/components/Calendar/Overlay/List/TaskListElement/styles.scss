@@ -1,0 +1,29 @@
+.task {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  padding: 0;
+  transition: color 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    color: #2f74b5;
+  }
+
+  .taskTime {
+    width: 30px;
+    font-size: 8px;
+    line-height: 8px;
+    position: relative;
+    top: 1px;
+  }
+
+  .taskTitle {
+    width: calc(100% - 30px);
+    font-size: 10px;
+    line-height: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

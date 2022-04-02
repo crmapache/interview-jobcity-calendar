@@ -1,0 +1,59 @@
+.taskCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .dateTimeTitle {
+      font-size: 10px;
+      color: #444;
+    }
+
+    .city {
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    .title {
+      font-size: 18px;
+      color: #222;
+      margin-bottom: 15px;
+    }
+
+    .weatherIconWrap {
+      .weatherIcon {
+        max-width: 50px;
+        max-height: 50px;
+      }
+
+      .weatherPreloader {
+        animation: rotate 1s infinite linear;
+
+        @keyframes rotate {
+          0% {
+            transform: rotate(0);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+
+    & > *:first-child {
+      margin-right: 10px;
+    }
+  }
+}

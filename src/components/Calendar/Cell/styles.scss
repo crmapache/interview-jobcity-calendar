@@ -1,0 +1,83 @@
+.cell {
+  position: relative;
+
+  &:hover {
+    .addNewTaskButton {
+      display: flex;
+    }
+  }
+
+  &.active {
+    .dateTitle {
+      color: #222;
+    }
+  }
+
+  &.active.weekend {
+    .dateTitle {
+      color: #2f74b5;
+    }
+  }
+
+  &.current {
+    .dateTitle {
+      color: #ff0045 !important;
+    }
+  }
+
+  .dateTitle {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 0;
+    color: #bcb8b8;
+  }
+
+  .addNewTaskButton {
+    position: absolute;
+    top: 2px;
+    right: 3px;
+    width: 24px;
+    height: 16px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .showMoreTasksButton {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    right: 10px;
+    height: 16px;
+    font-size: 12px;
+  }
+
+  .task {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    transition: color .2s;
+
+    &:hover {
+      cursor: pointer;
+      color: #2f74b5;
+    }
+
+    .taskTime {
+      width: 30px;
+      font-size: 8px;
+      line-height: 8px;
+      position: relative;
+      top: 1px;
+    }
+
+    .taskTitle {
+      width: calc(100% - 30px);
+      font-size: 10px;
+      overflow:hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}

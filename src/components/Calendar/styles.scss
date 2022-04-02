@@ -1,0 +1,41 @@
+.calendarWrap {
+  width: 100%;
+}
+
+.dayTitlesWrap {
+  display: flex;
+  background-color: #2f74b5;
+  border-left: 1px solid #2f74b5;
+  border-right: 1px solid #2f74b5;
+
+  .dayTitle {
+    height: 20px;
+    text-align: center;
+    flex: 1 1 0;
+    color: #fff;
+  }
+}
+
+.calendar {
+  $borderColor: #a4a4a4;
+
+  width: 100%;
+  border-top: 1px solid $borderColor;
+  border-left: 1px solid $borderColor;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  .cell {
+    width: calc(100% / 7);
+    height: 100px;
+    background-color: #fff;
+    border-bottom: 1px solid $borderColor;
+    border-right: 1px solid $borderColor;
+    padding: 0 10px;
+
+    &.weekend {
+      background-color: #f2f2f2;
+    }
+  }
+}
